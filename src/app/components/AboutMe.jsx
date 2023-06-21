@@ -18,17 +18,17 @@ const AboutMe = () => {
         <span className="text-orange-300">{`{`}</span>
         <br />
         <br />
-        <div className=" mx-auto mt-[-10px] md:ml-5">
+        <div className="mx-auto mt-[-10px] md:ml-5">
           <span className="text-red-500">
             {" "}
             name<span className="text-white">:</span>{" "}
-            <span className="text-[#6ba564]">"Marcelo"</span>
+            <span className="text-[#6ba564]">&quot;Marcelo&quot;</span>
           </span>
           ,<br />
           <span className="text-red-500">
             {" "}
             lastName<span className="text-white">:</span>{" "}
-            <span className="text-[#6ba564]">"Garcia"</span>
+            <span className="text-[#6ba564]">&quot;Garcia&quot;</span>
           </span>
           ,<br />
           <span className="text-red-500">
@@ -40,7 +40,7 @@ const AboutMe = () => {
           <span className="text-red-500">
             {" "}
             country<span className="text-white">:</span>{" "}
-            <span className="text-[#6ba564]">"Mexico"</span>
+            <span className="text-[#6ba564]">&quot;Mexico&quot;</span>
           </span>
           , <br />
           <span className="text-red-500">
@@ -50,11 +50,11 @@ const AboutMe = () => {
           </span>{" "}
           <br />
           <span className="ml-4 text-[#6ba564]">
-            "Full Stack Javascript Bootcamp P5"
+            &quot;Full Stack Javascript Bootcamp P5&quot;
           </span>
           , <br />
           <span className="ml-4 text-[#6ba564]">
-            "Industrial Engineering @ ITESM"
+            &quot;Industrial Engineering @ ITESM&quot;
           </span>{" "}
           <br />
           <span className="text-[#7c6ad7]">]</span> <br />
