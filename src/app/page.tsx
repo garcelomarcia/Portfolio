@@ -175,8 +175,8 @@ export default function Home() {
             </h2>
           </div>
           <div className="flex md:flex-row flex-col md:gap-8 justify-between">
-            <div className="text-center shadow-lg p-10 rounded-xl my-4  dark:bg-white flex-1">
-              <Image src={html5} width={100} height={100} alt={""}/>
+            <div className="text-center shadow-lg p-10 rounded-xl my-4 dark:bg-white flex-1">
+              <Image src={html5} width={100} height={100} alt={""} className="mx-auto"/>
               <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
                 FrontEnd
               </h6>
@@ -188,8 +188,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">Redux</p>
               <p className="text-gray-800 py-1">TailwindCSS</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-4  dark:bg-white flex-1">
-              <Image src={nodelogo} width={100} height={100} alt={""}/>
+            <div className="text-center shadow-lg p-10 rounded-xl my-4 dark:bg-white flex-1">
+              <Image src={nodelogo} width={100} height={100} alt={""} className="mx-auto"/>
               <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
                 Backend
               </h6>
@@ -201,8 +201,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">Python</p>
               <p className="text-gray-800 py-1">Flask</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-4  dark:bg-white flex-1">
-              <Image src={tools} width={100} height={100} alt={""}/>
+            <div className="text-center shadow-lg p-10 rounded-xl my-4 dark:bg-white flex-1">
+              <Image src={tools} width={100} height={100} alt={""} className="mx-auto"/>
               <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
                 Tools
               </h6>
@@ -290,7 +290,7 @@ export default function Home() {
                       aria-label=""
                       className="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg"
                     >
-                      Live Demo
+                     {project.live_btn}
                     </a>
                     <a
                       href={project.github}
@@ -299,7 +299,7 @@ export default function Home() {
                       aria-label=""
                       className="inline-flex bg-blue-500 hover:bg-blue-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white"
                     >
-                      Source Code
+                      {project.source_btn}
                     </a>
                   </div>
                 </div>

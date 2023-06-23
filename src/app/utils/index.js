@@ -19,11 +19,13 @@ const projectList = [
       "Sequelize",
     ],
     github: "https://github.com/garcelomarcia/TMDB",
-    live: "http://www.google.com/",
+    live: "https://tmdb-front-garcelomarcia.vercel.app/",
     demoAccount: {
-      username: "demo@example.com",
-      password: "Demo1234$",
+      username: "demo",
+      password: "password",
     },
+    live_btn: "Live Demo",
+    source_btn: "Source Code",
   },
   {
     title: "Custom T-Shirts",
@@ -47,6 +49,8 @@ const projectList = [
       username: "demo@example.com",
       password: "Demo1234$",
     },
+    live_btn: "Live Demo",
+    source_btn: "Source Code",
   },
   {
     title: "LinkBase",
@@ -65,11 +69,10 @@ const projectList = [
       "Sequelize",
     ],
     github: "https://github.com/LinkBase2-0",
-    live: "http://www.google.com/",
-    demoAccount: {
-      username: "demo@example.com",
-      password: "Demo1234$",
-    },
+    live: "https://dms.licdn.com/playlist/vid/D4E05AQFYg7KLuUGVjw/mp4-720p-30fp-crf28/0/1681499893886?e=1687993200&v=beta&t=6hHEmlmvLn5bjfUEmkifrOQs5yQFUJ3fA9UQavSrJ9A",
+    demoAccount: null,
+    live_btn: "Video Sample",
+    source_btn: "Source Code",
   },
 ];
 
