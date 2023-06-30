@@ -6,6 +6,7 @@ import Head from "next/head";
 import Image from 'next/image'
 import AboutMe from "./components/AboutMe"
 import DemoAccount from "./components/DemoAccount"
+import ScrollButton from "./components/ScrollButton"
 import profile from "../../public/profile.jpeg"
 import html5 from "../../public/html5.png"
 import nodelogo from "../../public/node_logo.png";
@@ -25,6 +26,7 @@ export default function Home() {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main className="absolute bg-white px-0 dark:bg-gray-900 md:px-20 lg:px-40 scroll-smooth w-full">
+      <ScrollButton/>
       <section className="min-h-screen">
         <nav className="p-5 flex justify-between items-center dark:text-white">
           <h1 className="font-burtons text-xl">garcelomarcia</h1>
