@@ -70,7 +70,7 @@ export const projectList = [
       "Sequelize",
     ],
     github: "https://github.com/LinkBase2-0",
-    live: "https://dms.licdn.com/playlist/vid/D4E05AQFYg7KLuUGVjw/mp4-720p-30fp-crf28/0/1681499893886?e=1687993200&v=beta&t=6hHEmlmvLn5bjfUEmkifrOQs5yQFUJ3fA9UQavSrJ9A",
+    live: "https://tmdb-back-w5b3.onrender.com/api/videos/linkbase",
     demoAccount: null,
     live_btn: "Video Sample",
     source_btn: "Source Code",
