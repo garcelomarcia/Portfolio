@@ -15,7 +15,7 @@ import projects from "./utils"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const [menu,setMenu] = useState(false)
+  const [menu,setMenu] = useState(true)
   return (
     <div className={darkMode ? "dark" : ""}>
     <Head>
