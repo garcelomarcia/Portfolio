@@ -124,7 +124,7 @@ export default function Home() {
             Fullstack Javascript Developer
           </h3>
           <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-sans">
-            Freelancer providing Fullstack Development services for Web and Mobile Applications. Scroll down to get to know me and what I&quots;ve been working on!
+            Freelancer providing Fullstack Development services for Web and Mobile Applications. Scroll down to get to know me and what I&apos;ve been working on!
           </p>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <a href={"http://www.github.com/garcelomarcia"}>
