@@ -1,7 +1,8 @@
 import TMDB from "../../../public/tmdb.png";
 import Ecommerce from "../../../public/ecommerce.png";
 import LinkBase from "../../../public/linkbase.png";
-const projectList = [
+
+export const projectList = [
   {
     title: "TMDB",
     subTitle: "Entertainment",
@@ -76,4 +77,28 @@ const projectList = [
   },
 ];
 
-export default projectList;
+export const text = {
+  english: {
+    title: "Fullstack Javascript Developer",
+    description:
+      "Freelancer providing Fullstack Development services for Web and Mobile Applications. Scroll down to get to know me and what I've been working on!",
+    about: "About",
+    skills: "Skills",
+    portfolio: "Portfolio",
+    resume: "Resume",
+    about_me:
+      "As an industrial engineer with a manufacturing background, I have always been passionate about solving complex problems and optimizing processes. Recently, I have expanded my skillset by completing a fullstack JavaScript coding bootcamp and honing my programming skills. I am excited to take on new challenges and use my diverse background to contribute to a dynamic team as a developer. With my strong foundation in engineering and newfound coding abilities, I am conﬁdent that I can bring a unique perspective and innovative solutions to any project.",
+  },
+
+  spanish: {
+    title: "Desarrollador Fullstack en Javascript",
+    description:
+      "Proveo desarrollos Fullstack en Web y de Aplicaciones. Dale hacia abajo para conocer más sobre mí, mis habilidades y los proyectos que he desarrollado!",
+    about: "Sobre mí",
+    skills: "Habilidades",
+    portfolio: "Portafolio",
+    resume: "Currículum",
+    about_me:
+      "Como ingeniero industrial con experiencia en manufactura, siempre me ha apasionado resolver problemas complejos y optimizar procesos. Recientemente, he ampliado mis habilidades al completar un bootcamp de programación fullstack en JavaScript y perfeccionar mis habilidades de programación. Estoy emocionado de enfrentar nuevos desafíos y utilizar mi experiencia diversa para contribuir a un equipo dinámico como desarrollador. Con mi sólida base en ingeniería y mis habilidades recién adquiridas en programación, tengo confianza en que puedo aportar una perspectiva única y soluciones innovadoras a cualquier proyecto.",
+  },
+};

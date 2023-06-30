@@ -46,7 +46,7 @@ const DemoAccount = ({ demoAccount }) => {
             tabIndex="-1"
             id="menu-item-2"
           >
-            Email: {demoAccount.username}
+            User/Email: {demoAccount.username}
           </p>
           <p
             className="text-gray-700 block px-4 py-2 text-sm"

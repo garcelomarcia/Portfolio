@@ -10,12 +10,13 @@ import profile from "../../public/profile.jpeg"
 import html5 from "../../public/html5.png"
 import nodelogo from "../../public/node_logo.png";
 import tools from "../../public/tools.png";
-import projects from "./utils"
+import {projectList as projects, text} from "./utils"
 // import Menu from "../../public/menu.svg"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [menu,setMenu] = useState(true)
+  const [english, setEnglish] = useState(true)
   return (
     <div className={darkMode ? "dark" : ""}>
     <Head>
@@ -38,7 +39,7 @@ export default function Home() {
                 className="text-xl dark:text-white mx-4 hover:text-cyan-500 dark:hover:text-cyan-500 font-sans"
                 href="#about"
               >
-                About
+                {english ? text.english.about:text.spanish.about}
               </a>
             </li>
             <li>
@@ -46,7 +47,7 @@ export default function Home() {
                 className="text-xl dark:text-white mx-4 hover:text-cyan-500 dark:hover:text-cyan-500 font-sans"
                 href="#skills"
               >
-                Skills
+                {english ? text.english.skills:text.spanish.skills}
               </a>
             </li>
             <li>
@@ -54,7 +55,7 @@ export default function Home() {
                 className="text-xl dark:text-white mx-4 hover:text-cyan-500 dark:hover:text-cyan-500 font-sans"
                 href="#projects"
               >
-                Portfolio
+                {english ? text.english.portfolio:text.spanish.portfolio}
               </a>
             </li>
             <li>
@@ -62,13 +63,16 @@ export default function Home() {
                 className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md mx-4 font-sans"
                 href="https://drive.google.com/file/d/14LV0lzGcXQLP5ox-OzdnYqkldpykKlBQ/view?usp=sharing"
               >
-                Resume
+                {english ? text.english.resume:text.spanish.resume}
               </a>
+            </li>
+            <li onClick={()=>{setEnglish(!english)}}>
+                {english ? <p className="text-xl mx-4 cursor-pointer">🇬🇧 </p>: <p className="text-xl mx-4 cursor-pointer">🇪🇸</p> }              
             </li>
             <li>
               <BsFillMoonStarsFill
                 onClick={() => setDarkMode(!darkMode)}
-                className=" cursor-pointer text-2xl"
+                className=" cursor-pointer text-2xl mx-4"
               />
             </li>
           </ul>
@@ -81,7 +85,7 @@ export default function Home() {
                 className="text-xl dark:text-white hover:text-cyan-500 dark:hover:text-cyan-500 font-sans"
                 href="#about"
               >
-                About
+                {english ? text.english.about:text.spanish.about}
               </a>
             </li>
             <li className="my-4">
@@ -89,7 +93,7 @@ export default function Home() {
                 className="text-xl dark:text-white hover:text-cyan-500 dark:hover:text-cyan-500 font-sans"
                 href="#skills"
               >
-                Skills
+                {english ? text.english.skills:text.spanish.skills}
               </a>
             </li>
             <li className="my-4">
@@ -97,7 +101,7 @@ export default function Home() {
                 className="text-xl dark:text-white hover:text-cyan-500 dark:hover:text-cyan-500 font-sans"
                 href="#projects"
               >
-                Portfolio
+                {english ? text.english.portfolio:text.spanish.portfolio}
               </a>
             </li>
             <li className="my-4">
@@ -105,8 +109,11 @@ export default function Home() {
                 className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md font-sans"
                 href="https://drive.google.com/file/d/14LV0lzGcXQLP5ox-OzdnYqkldpykKlBQ/view?usp=sharing"
               >
-                Resume
+                {english ? text.english.resume:text.spanish.resume}
               </a>
+            </li>
+            <li className="my-4" onClick={()=>{setEnglish(!english)}}>
+                {english ? <p className="text-xl cursor-pointer">🇬🇧 </p>: <p className="text-xl cursor-pointer">🇪🇸</p> }              
             </li>
             <li className="my-4">
               <BsFillMoonStarsFill
@@ -121,10 +128,10 @@ export default function Home() {
             Marcelo Garcia
           </h2>
           <h3 className="text-2xl py-2 dark:text-white md:text-3xl font-sans">
-            Fullstack Javascript Developer
+          {english ? text.english.title:text.spanish.title}
           </h3>
-          <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-sans">
-            Freelancer providing Fullstack Development services for Web and Mobile Applications. Scroll down to get to know me and what I&apos;ve been working on!
+          <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-sans text-justify">
+          {english ? text.english.description:text.spanish.description}
           </p>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <a href={"http://www.github.com/garcelomarcia"}>
@@ -166,7 +173,7 @@ export default function Home() {
                     height="24"
                   />
                 </svg>
-                <span className="relative">About Me</span>
+                <span className="relative">{english ? text.english.about:text.spanish.about}</span>
               </span>
             </h2>
           </div>
@@ -175,15 +182,7 @@ export default function Home() {
               <AboutMe />
             </div>
             <p className="text-md p-4 leading-8 text-gray-800 dark:text-gray-200 text-justify basis-1/2">
-              As an industrial engineer with a manufacturing background, I
-              have always been passionate about solving complex problems and
-              optimizing processes. Recently, I have expanded my skillset by
-              completing a fullstack JavaScript coding bootcamp and honing my
-              programming skills. I am excited to take on new challenges and
-              use my diverse background to contribute to a dynamic team as a
-              developer. With my strong foundation in engineering and newfound
-              coding abilities, I am conﬁdent that I can bring a unique
-              perspective and innovative solutions to any project.
+            {english ? text.english.about_me:text.spanish.about_me}
             </p>
           </div>
         </div>
@@ -215,7 +214,7 @@ export default function Home() {
                     height="24"
                   />
                 </svg>
-                <span className="relative">Skills</span>
+                <span className="relative">{english ? text.english.skills:text.spanish.skills}</span>
               </span>
             </h2>
           </div>
@@ -236,7 +235,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-4 dark:bg-white flex-1">
               <Image src={nodelogo} width={100} height={100} alt={""} className="mx-auto"/>
               <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
-                Backend
+                BackEnd
               </h6>
               <p className="text-gray-800 py-1">NodeJS</p>
               <p className="text-gray-800 py-1">Express</p>
@@ -249,7 +248,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-4 dark:bg-white flex-1">
               <Image src={tools} width={100} height={100} alt={""} className="mx-auto"/>
               <h6 className="mb-2 font-semibold leading-5 border-b-2 pb-4">
-                Tools
+              {english ? "Tools":"Herramientas"}
               </h6>
               <p className="text-gray-800 py-1">Git</p>
               <p className="text-gray-800 py-1">Github</p>
@@ -288,7 +287,7 @@ export default function Home() {
                     height="24"
                   />
                 </svg>
-                <span className="relative">Projects</span>
+                <span className="relative">{english ? "Projects":"Proyectos"}</span>
               </span>
             </h2>
           </div>
