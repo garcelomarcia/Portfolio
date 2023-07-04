@@ -273,6 +273,7 @@ export default function Home() {
               </h6>
               <p className="text-gray-800 py-1">Git</p>
               <p className="text-gray-800 py-1">Github</p>
+              <p className="text-gray-800 py-1">Docker</p>
               <p className="text-gray-800 py-1">Selenium</p>
               <p className="text-gray-800 py-1">Heroku</p>
               <p className="text-gray-800 py-1">VSCode</p>
