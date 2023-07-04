@@ -32,7 +32,7 @@ export const projectList = [
     title: "Custom T-Shirts",
     subTitle: "E-commerce",
     description:
-      "This Website is an E-Commerce site with a full customer experience, including registering users, browsing & customizing products, adding products to cart and checking out.",
+      "This Website is an E-Commerce site with a full customer experience, including registering users, browsing & customizing products, adding products to cart and checking out. It also allows an admin login to manage products and user priviliges",
     image: Ecommerce,
     technologies: [
       "ReactJS",
@@ -45,10 +45,10 @@ export const projectList = [
       "Sequelize",
     ],
     github: "https://github.com/julian-rinaudo/ecommerce",
-    live: "http://www.google.com/",
+    live: "https://ecommerce-garcelomarcia.vercel.app/",
     demoAccount: {
-      username: "demo@example.com",
-      password: "Demo1234$",
+      username: "demo@mail.com / admin@mail.com",
+      password: "password",
     },
     live_btn: "Live Demo",
     source_btn: "Source Code",
