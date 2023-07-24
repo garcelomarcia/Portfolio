@@ -349,6 +349,7 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="flex flex-wrap space-x-2 mt-5">
+                    {project.live && (
                     <a
                       href={project.live}
                       target="_blank"
@@ -357,7 +358,7 @@ export default function Home() {
                       className="inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg"
                     >
                      {project.live_btn}
-                    </a>
+                    </a>)}
                     <a
                       href={project.github}
                       target="_blank"

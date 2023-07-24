@@ -1,6 +1,9 @@
 import TMDB from "../../../public/tmdb.png";
 import Ecommerce from "../../../public/ecommerce.png";
 import LinkBase from "../../../public/linkbase.png";
+import FastDelivery from "../../../public/FastDelivery.png";
+import Tradingview from "../../../public/Tradingview.png";
+import Binance from "../../../public/Binance.jpeg"
 
 export const projectList = [
   {
@@ -73,6 +76,53 @@ export const projectList = [
     live: "https://tmdb-back-w5b3.onrender.com/api/videos/linkbase",
     demoAccount: null,
     live_btn: "Video Sample",
+    source_btn: "Source Code",
+  },
+  {
+    title: "Fast Delivery",
+    subTitle: "Utility",
+    description:
+      "Fast Delivery is a Web application designed to keep track of package deliveries. It features navigation options with GoogleMaps API.",
+    image: FastDelivery,
+    technologies: [
+      "NextJs",
+      "Redux",
+      "Tailwind CSS",
+      "TypeScript",
+      "NodeJS",
+      "Express",
+      "PostgreSQL",
+      "Sequelize",
+    ],
+    github: "https://github.com/FasterDelivery",
+    live: "https://front-git-develop-fast-delivery.vercel.app/",
+    demoAccount: {
+      username: "user@user.com",
+      password: "123456",
+    },
+    live_btn: "Live Demo",
+    source_btn: "Source Code",
+  },
+  {
+    title: "Tradingview Strategy Backtester",
+    subTitle: "Finance",
+    description:
+      "A script that uses Selenium Webdriver to scrape the data and find a Strategy's optimal settings by iterating through its specified parameters",
+    image: Tradingview,
+    technologies: ["Python", "Selenium", "Pandas", "Numpy"],
+    github: "https://github.com/FasterDelivery",
+    live: "https://www.loom.com/share/5ac4bbd752da462c9e6f15672d5574e2?sid=7a3bf57a-a8f3-4eba-a8fa-fad91984e201",
+    live_btn: "Video Sample",
+    source_btn: "Source Code",
+  },
+  {
+    title: "Binance Trading Bot",
+    subTitle: "Finance",
+    description:
+      "A Bot that uses Python's Flask to create an API that recieves Tradingview's Webhook alerts and transforms them to Stop Market Orders using BinanceAPI. This bot also uses a websocket service to listen to filled orders so that exit orders (Take Profit and Stop Loss) can be placed in less than a second.",
+    image: Binance,
+    technologies: ["Python", "Flask", "Pandas", "Numpy", "Binance Client", "SQL", "Psycopg2"],
+    github: "https://github.com/garcelomarcia/Breakout-Bot",
     source_btn: "Source Code",
   },
 ];
