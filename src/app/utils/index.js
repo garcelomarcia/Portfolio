@@ -110,7 +110,7 @@ export const projectList = [
       "A script that uses Selenium Webdriver to scrape the data and find a Strategy's optimal settings by iterating through its specified parameters",
     image: Tradingview,
     technologies: ["Python", "Selenium", "Pandas", "Numpy"],
-    github: "https://github.com/FasterDelivery",
+    github: "https://github.com/garcelomarcia/tradingview-strategy-backtester",
     live: "https://www.loom.com/share/5ac4bbd752da462c9e6f15672d5574e2?sid=7a3bf57a-a8f3-4eba-a8fa-fad91984e201",
     live_btn: "Video Sample",
     source_btn: "Source Code",
@@ -122,7 +122,7 @@ export const projectList = [
       "A Bot that uses Python's Flask to create an API that recieves Tradingview's Webhook alerts and transforms them to Stop Market Orders using BinanceAPI. This bot also uses a websocket service to listen to filled orders so that exit orders (Take Profit and Stop Loss) can be placed in less than a second.",
     image: Binance,
     technologies: ["Python", "Flask", "Pandas", "Numpy", "Binance Client", "SQL", "Psycopg2"],
-    github: "https://github.com/garcelomarcia/Breakout-Bot",
+    github: "https://github.com/garcelomarcia/Bot-Websockets/",
     source_btn: "Source Code",
   },
 ];
