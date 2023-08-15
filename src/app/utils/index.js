@@ -95,10 +95,10 @@ export const projectList = [
       "Sequelize",
     ],
     github: "https://github.com/FasterDelivery",
-    live: "https://front-git-develop-fast-delivery.vercel.app/",
+    live: "https://fast-delivery-garcelomarcia.vercel.app/",
     demoAccount: {
-      username: "user@user.com",
-      password: "123456",
+      username: "user@user.com / admin@admin.com",
+      password: "123456 / admin",
     },
     live_btn: "Live Demo",
     source_btn: "Source Code",
