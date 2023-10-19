@@ -4,7 +4,7 @@ import LinkBase from "../../../public/linkbase.png";
 import FastDelivery from "../../../public/FastDelivery.png";
 import Tradingview from "../../../public/Tradingview.png";
 import Binance from "../../../public/Binance.jpeg"
-
+import Dashboard from "../../../public/dashboard.png"
 export const projectList = [
   {
     title: "TMDB",
@@ -123,6 +123,18 @@ export const projectList = [
     image: Binance,
     technologies: ["Python", "Flask", "Pandas", "Numpy", "Binance Client", "SQL", "Psycopg2"],
     github: "https://github.com/garcelomarcia/Bot-Websockets/",
+    source_btn: "Source Code",
+  },
+  {
+    title: "Crypto Dashboard",
+    subTitle: "Finance",
+    description:
+      "A Dashboard with Live Market Data and Statistical Data to assist with financial and investment decisions. This dashboard has a notification feature, so that the user doesn't miss an opportunity. ",
+    image: Dashboard,
+    technologies: ["Python", "SocketIO", "Toastify", "Express", "Sequelize", "SQL", "Psycopg2"],
+    github: "https://github.com/garcelomarcia/crypto-dashboard-back/",
+    live: "https://crypto-dashboard-garcelomarcia.vercel.app/",
+    live_btn: "Live Demo",
     source_btn: "Source Code",
   },
 ];

@@ -82,7 +82,7 @@ export default function Home() {
             <li>
               <a
                 className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md mx-4 font-sans"
-                href="https://drive.google.com/file/d/14LV0lzGcXQLP5ox-OzdnYqkldpykKlBQ/view?usp=sharing"
+                href={english ? "https://drive.google.com/file/d/1w4erzAmUElALTmw2UbZv9L8FmGMxop82/view?usp=sharing" : "https://drive.google.com/file/d/1YcgODLvXZg4XohiMbY9LbwFg6RNjWdvT/view?usp=sharing"}
               >
                 {english ? text.english.resume:text.spanish.resume}
               </a>
